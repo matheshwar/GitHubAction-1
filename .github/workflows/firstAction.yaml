@@ -6,3 +6,5 @@ jobs:
         steps:
         - name: welcome Message
           run: echo "Hello"
+        - name: List
+          run: ls
