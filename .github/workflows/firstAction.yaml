@@ -8,3 +8,5 @@ jobs:
           run: echo "Hello"
         - name: List
           run: ls
+        - name: Read
+          run: cat README.md
