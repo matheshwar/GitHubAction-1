@@ -11,7 +11,7 @@ jobs:
         run: ls
         
       - name: Display README.md
-        run: echop "helloooooo"
+        run: echo "helloooooo"
         
       - name: Display README.md
         run: cat README.md
