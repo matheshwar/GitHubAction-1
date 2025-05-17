@@ -1,18 +1,18 @@
-name: Manual Trigger
+name: Cat README
 on:
-  workflow_dispatch:
-    inputs:
-      environment:
-        description: 'Environment to deploy'
-        required: true
-        default: 'production'
+  workflow_dispatch:  # Allows manual trigger
 jobs:
-    first_job:
-        runs-on: ubuntu-latest
-        steps:
-        - name: welcome Message
-          run: echo "Hello"
-        - name: List
-          run: ls
-        - name: Read
-          run: cat README.md
+  display-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4  # Required to access files
+      - name: Display README.md
+        run: ls
+        
+      - name: Display README.md
+        run: echop "helloooooo"
+        
+      - name: Display README.md
+        run: cat README.md
+ 
