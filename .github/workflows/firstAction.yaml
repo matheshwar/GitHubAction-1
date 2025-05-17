@@ -1,5 +1,11 @@
-name: First Job
-on: push
+name: Manual Trigger
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to deploy'
+        required: true
+        default: 'production'
 jobs:
     first_job:
         runs-on: ubuntu-latest
